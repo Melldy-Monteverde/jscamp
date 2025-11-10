@@ -72,6 +72,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  border-bottom: 1px solid var(--border);
 
   h2 {
     font-size: 1.25rem;
@@ -282,8 +283,9 @@ article {
     margin: 0 auto 1rem auto;
   }
 
-  h3 {
+  div h3 {
     font-weight: 500;
+    text-align: left;
   }
 
   p {
@@ -379,6 +381,18 @@ header div > a.nav-page_empleos {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0.5rem;
+    
+    & section.option-container {
+      border-radius: 5px;
+      background: var(--input-bg);
+
+    }
+
+    & option {
+      background: var(--input-bg);
+      color: var(--text-primary);
+
+    }
   }
 
   form {
@@ -390,6 +404,34 @@ header div > a.nav-page_empleos {
     background: none;
     box-shadow: none;
     padding: 0;
+  }
+}
+
+select {
+  padding: 0.625rem 1.25rem;
+  padding-right: 2.5rem;
+  background-color: #242d3a;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #ddd;
+  cursor: pointer;
+  transform: all 0.2s;
+  appearance: none;
+
+  /* *transformar el svg en formato data para poder usarlo como fondo */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+
+  &:hover {
+    background-color: var(--primary-hover);
+    color: white;
+  }
+
+  &:focus {
+    outline: 2px solid #1173d4;
+    outline-offset: 2px;
   }
 }
 
@@ -421,6 +463,7 @@ header div > a.nav-page_empleos {
 
     p {
       margin-top: 0.5rem;
+      text-align: justify;
     }
 
     &:last-child {
@@ -470,4 +513,55 @@ header div > a.nav-page_empleos {
     background: #4caf50;
     pointer-events: none;
   }
+}
+
+/* descripción del empleo */
+small.job-crumb-route {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+section.job-details {
+  padding: 1rem 3rem;
+}
+
+section.job-description-container {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+article ul {
+  text-align: justify;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+
+  }
+
+  & li svg {
+    flex-shrink: 0;
+    width: 1.1em;
+    height: 1.1em;
+    margin-top: 0.2em;
+    padding: 0;
+    margin: auto 1rem;
+  }
+}
+
+section.job-info,
+section.job-about-company {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+section.job-about-company {
+  margin-bottom: 2rem;
 }

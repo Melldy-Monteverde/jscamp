@@ -31,7 +31,7 @@
 
       <nav>
         <a href="../index.html" target="_self">Buscar</a>
-        <a href="" target="_self">Empleos</a>
+        <a href="#" target="_self">Empleos</a>
         <a href="" target="_self">Empresas</a>
         <a href="" target="_self">Salarios</a>
       </nav>
@@ -76,20 +76,16 @@
           </div>
 
           <div class="search-filters">
-            <select name="technology" id="filter-technology">
+            <select name="technology" id="filter-technology" class="option-container">
               <option value="">Tecnología</option>
-              <optgroup label="Tecnologías populares">
-                <option value="javascript">JavaScript</option>
-                <option value="python">Python</option>
-                <option value="react">React</option>
-                <option value="nodejs">Node.js</option>
-              </optgroup>
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="react">React</option>
+              <option value="nodejs">Node.js</option>
               <option value="java">Java</option>
-              <hr />
               <option value="csharp">C#</option>
               <option value="c">C</option>
               <option value="c++">C++</option>
-              <hr />
               <option value="ruby">Ruby</option>
               <option value="php">PHP</option>
             </select>
@@ -101,6 +97,7 @@
               <option value="guadalajara">Guadalajara</option>
               <option value="monterrey">Monterrey</option>
               <option value="barcelona">Barcelona</option>
+              <option value="madrid">Madrid</option>
             </select>
 
             <select name="experience-level" id="filter-experience-level">
@@ -113,6 +110,7 @@
           </div>
         </form>
 
+        <!-- * esto es solo temporal para ver el valor de los inputs y filtros-->
         <span id="filter-selected-value"></span>
       </section>
 
@@ -122,10 +120,10 @@
 
         <div class="jobs-listings">
           <!-- todo: Aquí se insertan los empleos dinámicamente -->
-          <article class="job-listing-card">
+          <article data-modalidad="remoto" class="job-listing-card">
             <div>
-              <h3>lorem ipsum lorem ipsum dolor sit amet</h3>
-              <small>Empresa xyz - Ciudad x</small>
+              <h3>Ingeniero de Software</h3>
+              <small>Empresa lorem - Remoto</small>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                 impedit culpa animi harum quo ad doloribus, vitae, et ipsum
@@ -136,10 +134,10 @@
             <button class="btn-apply-job">Aplicar</button>
           </article>
 
-          <article class="job-listing-card">
+          <article data-modalidad="cdmx" class="job-listing-card">
             <div>
-              <h3>lorem ipsum lorem ipsum dolor sit amet</h3>
-              <small>Empresa xyz - Ciudad x</small>
+              <h3>Analista de Datos</h3>
+              <small>Empresa zzz - Ciudad de Mexico</small>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                 impedit culpa animi harum quo ad doloribus, vitae, et ipsum
@@ -150,10 +148,52 @@
             <button class="btn-apply-job">Aplicar</button>
           </article>
 
-          <article class="job-listing-card">
+           <article data-modalidad="madrid" class="job-listing-card">
             <div>
-              <h3>lorem ipsum lorem ipsum dolor sit amet</h3>
-              <small>Empresa xyz - Ciudad x</small>
+              <h3>Programador React</h3>
+              <small>Empresa www - Madrid</small>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
+                facere quidem odio autem officia, reprehenderit inventore maxime
+                suscipit nam commodi.
+              </p>
+            </div>
+            <button class="btn-apply-job">Aplicar</button>
+          </article>
+
+          <article data-modalidad="barcelona" class="job-listing-card">
+            <div>
+              <h3>Programador Backend</h3>
+              <small>Empresa www - Barcelona</small>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
+                facere quidem odio autem officia, reprehenderit inventore maxime
+                suscipit nam commodi.
+              </p>
+            </div>
+            <button class="btn-apply-job">Aplicar</button>
+          </article>
+
+           <article data-modalidad="guadalajara" class="job-listing-card">
+            <div>
+              <h3>Programador Backend</h3>
+              <small>Empresa www - Guadalajara</small>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
+                facere quidem odio autem officia, reprehenderit inventore maxime
+                suscipit nam commodi.
+              </p>
+            </div>
+            <button class="btn-apply-job">Aplicar</button>
+          </article>
+
+          <article data-modalidad="monterrey" class="job-listing-card">
+            <div>
+              <h3>Programador Backend</h3>
+              <small>Empresa www - Monterrey</small>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                 impedit culpa animi harum quo ad doloribus, vitae, et ipsum
