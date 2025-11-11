@@ -4,11 +4,8 @@
     <title>DevJobs - Inicio</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Listado de empleos y filtros par ." />
-
+    <script type="module" src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
-
-    <!-- *asi se puede aplicar js en line, siempre usar modue -->
-    <script type="module" src="../js/app.js"></script>
   </head>
 
   <body>
@@ -37,8 +34,7 @@
       </nav>
 
       <div>
-        <a href="">Iniciar sesión</a>
-        <a href="">Publicar un empleo</a>
+        <devjobs-avatar service="github" username="Melldy-Monteverde" size="32"></devjobs-avatar>
       </div>
     </header>
 
@@ -118,91 +114,8 @@
         <!-- *revisar estilos -->
         <h2 style="text-align: center">Resultados de búsqueda</h2>
 
-        <div class="jobs-listings">
+        <div class="jobs-listings" id="job-container">
           <!-- todo: Aquí se insertan los empleos dinámicamente -->
-          <article data-modalidad="remoto" class="job-listing-card">
-            <div>
-              <h3>Ingeniero de Software</h3>
-              <small>Empresa lorem - Remoto</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
-
-          <article data-modalidad="cdmx" class="job-listing-card">
-            <div>
-              <h3>Analista de Datos</h3>
-              <small>Empresa zzz - Ciudad de Mexico</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
-
-           <article data-modalidad="madrid" class="job-listing-card">
-            <div>
-              <h3>Programador React</h3>
-              <small>Empresa www - Madrid</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
-
-          <article data-modalidad="barcelona" class="job-listing-card">
-            <div>
-              <h3>Programador Backend</h3>
-              <small>Empresa www - Barcelona</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
-
-           <article data-modalidad="guadalajara" class="job-listing-card">
-            <div>
-              <h3>Programador Backend</h3>
-              <small>Empresa www - Guadalajara</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
-
-          <article data-modalidad="monterrey" class="job-listing-card">
-            <div>
-              <h3>Programador Backend</h3>
-              <small>Empresa www - Monterrey</small>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                impedit culpa animi harum quo ad doloribus, vitae, et ipsum
-                facere quidem odio autem officia, reprehenderit inventore maxime
-                suscipit nam commodi.
-              </p>
-            </div>
-            <button class="btn-apply-job">Aplicar</button>
-          </article>
         </div>
 
         <nav class="pagination">
